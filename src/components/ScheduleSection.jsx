@@ -1,6 +1,6 @@
 "use client"
 
-import scheduleImage from "../assets/stats.webp"
+import scheduleImage from "@/src/assets/stats.webp"
 import { motion } from "framer-motion"
 import { fadeIn, textVariant } from "../utils/motion"
 
@@ -17,7 +17,7 @@ const ScheduleSection = () => {
         <motion.div variants={fadeIn("right", 0.3)} className="w-full md:w-1/2">
           <motion.img
             variants={fadeIn("up", 0.4)}
-            src={scheduleImage}
+            src={'https://www.eximpedia.app/assets/img/home_slide1.webp'}
             alt="Statistics dashboard"
             className="w-full h-auto"
           />

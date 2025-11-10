@@ -1,7 +1,8 @@
 "use client"
 import { motion } from "framer-motion"
 import { fadeIn, textVariant } from "../utils/motion"
-import heroImage from "../assets/hero-image.png"
+import heroImage from "@/src/assets/hero-image.png"
+import Image from "next/image"
 
 const Hero = () => {
   return (
@@ -65,7 +66,7 @@ const Hero = () => {
         className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12"
       >
         <div className="relative">
-          <img
+          <Image
             src={heroImage || "/placeholder.svg"}
             alt="Team meeting"
             className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"

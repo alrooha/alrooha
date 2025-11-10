@@ -35,19 +35,12 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center container mx-auto px-4 sm:px-6 lg:px-8 md:h-20 h-16">
         {/* Logo */}
         <motion.div variants={fadeIn("right", 0.3)} className="flex items-center gap-1 cursor-pointer">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-4 h-4 bg-yellow-600 rounded-full opacity-75 hover:opacity-100 transition-opacity"
-          ></motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-4 h-4 bg-red-500 rounded-full -ml-2 hover:opacity-75 transition-opacity"
-          ></motion.div>
+          <p className="font-bold text-2xl">Al Rooha</p>
         </motion.div>
 
         {/* Mobile Menu Button & Theme Toggle */}
         <motion.div variants={fadeIn("left", 0.3)} className="md:hidden flex items-center gap-2">
-          {mounted && (
+          {/* {mounted && (
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -57,7 +50,7 @@ const Navbar = () => {
             >
               {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </motion.button>
-          )}
+          )} */}
           <motion.button className="p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <HiX className="h-6 w-6 dark:text-white" /> : <HiMenu className="h-6 w-6 dark:text-white" />}
           </motion.button>
@@ -81,7 +74,7 @@ const Navbar = () => {
 
         {/* Desktop Theme Toggle & CTA */}
         <motion.div variants={fadeIn("left", 0.3)} className="hidden md:flex items-center gap-4">
-          {mounted && (
+          {/* {mounted && (
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -91,7 +84,7 @@ const Navbar = () => {
             >
               {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </motion.button>
-          )}
+          )} */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

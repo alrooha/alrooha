@@ -55,7 +55,7 @@ const MonitorSection = () => {
           <motion.div variants={fadeIn("up", 0.4)} className="p-4">
             <motion.img
               variants={fadeIn("up", 0.5)}
-              src={monitorCardBg}
+              src={'https://www.wilmarinc.com/hs-fs/hubfs/AdobeStock_320335514-1.jpeg?width=600&name=AdobeStock_320335514-1.jpeg'}
               alt="Dashboard statistics"
               className="w-full h-auto rounded-lg"
             />

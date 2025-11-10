@@ -1,8 +1,9 @@
-import slack from "../assets/slack.png"
-import amazon from "../assets/amazon.png"
-import woocommerce from "../assets/woocommerce.png"
-import meundies from "../assets/meundies.png"
-import sitepoint from "../assets/sitepoint.png"
+import slack from "@/src/assets/slack.png"
+import amazon from "@/src/assets/amazon.png"
+import woocommerce from "@/src/assets/woocommerce.png"
+import meundies from "@/src/assets/meundies.png"
+import sitepoint from "@/src/assets/sitepoint.png"
+import Image from "next/image"
 
 const CompanyLogo = () => {
   const logos = [slack, amazon, woocommerce, meundies, sitepoint]
@@ -23,7 +24,7 @@ const CompanyLogo = () => {
         ))}
         {/* Duplicate logos for seamless loop */}
         {logos.map((logo, index) => (
-          <img
+          <Image
             key={`duplicate-${index}`}
             src={logo || "/placeholder.svg"}
             alt={`Company Logo ${index + 1}`}
